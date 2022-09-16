@@ -1,0 +1,93 @@
+.temp {
+  text-align: center;
+  margin-top: 5px;
+}
+.unit {
+  text-align: right;
+  margin: 0 auto;
+  font-size: 21px;
+}
+
+.dailyTemp {
+  margin: 0 auto;
+  font-size: 52px;
+}
+.days {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 18px;
+  margin-top: 15px;
+}
+.weatherIcon {
+  text-align: center;
+  font-size: 48px;
+}
+.description {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: left;
+}
+h1 {
+  font-weight: normal;
+  font-size: 50px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 25px;
+  margin: 0 auto;
+  padding-top: 0%;
+}
+h3 {
+  font-weight: lighter;
+  font-size: 16px;
+  margin: 0 auto;
+}
+.dailyIcon {
+  font-size: 100px;
+}
+.otherDetail {
+  font-size: 12px;
+  text-align: right;
+  margin: 0 auto;
+}
+.search {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+  color: black;
+  border-color: orange;
+  border-radius: 3px;
+  padding: 0px 12px;
+  border-width: 3px;
+}
+
+.submit {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: blue;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: #000;
+  opacity: 0.5;
+}
+.weather-forecast-temperature-max {
+  font-size: 16px;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+  font-size: 13px;
+}
+.icon {
+  font-size: 200px;
+  display: block;
+  text-align: right;
+}
