@@ -3,7 +3,6 @@ import { createRoot } from "react-dom/client";
 
 import "./App.css";
 import Weather from "./Weather.js";
-import SearchEngine from "./SearchEngine.js";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
