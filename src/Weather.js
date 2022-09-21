@@ -60,7 +60,10 @@ export default function Weather() {
         </div>
       </div>
       <div>
-        <a href="https://github.com/parcellj92/REACT-weather-app-react">
+        <a
+          href="https://github.com/parcellj92/REACT-weather-app-react"
+          target="_blank"
+        >
           Open-source code
         </a>{" "}
         by Jessica Parcell
