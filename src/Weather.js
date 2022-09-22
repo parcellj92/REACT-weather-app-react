@@ -1,6 +1,8 @@
 import React from "react";
 import "./Weather.css";
 import SearchEngine from "./SearchEngine.js";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function Weather() {
   let weatherData = {
     city: "New York",
@@ -13,7 +15,7 @@ export default function Weather() {
   };
   return (
     <div>
-      <div className="App">
+      <div className="App w-700">
         <div className="Weather">
           <SearchEngine />
           <div className="row mt-5">
@@ -60,10 +62,12 @@ export default function Weather() {
         </div>
       </div>
       <div>
-        <a href="https://github.com/parcellj92/REACT-weather-app-react">
-          Open-source code
-        </a>{" "}
-        by Jessica Parcell
+        <footer>
+          <a href="https://github.com/parcellj92/REACT-weather-app-react">
+            Open-source code
+          </a>{" "}
+          by Jessica Parcell
+        </footer>
       </div>
     </div>
   );
