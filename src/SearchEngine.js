@@ -20,6 +20,7 @@ export default function SearchEngine() {
         <input
           type="search"
           placeholder="Type a city..."
+          autoFocus="on"
           onChange={updateCity}
         />
         <input type="submit" value="Search" />

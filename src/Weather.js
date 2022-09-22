@@ -14,8 +14,8 @@ export default function Weather() {
     wind: "10",
   };
   return (
-    <div>
-      <div className="App w-700">
+    <div className="Container">
+      <div className="App">
         <div className="Weather">
           <SearchEngine />
           <div className="row mt-5">
