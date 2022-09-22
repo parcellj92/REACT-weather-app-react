@@ -20,7 +20,7 @@ export default function Weather() {
             <div className="col-6">
               <h1>
                 <span>{weatherData.temperature}</span>
-                <span className="unit align-text-top">˚F</span>
+                <span className="unit align-text-top">˚F | ˚C</span>
               </h1>
               <h2>{weatherData.city}</h2>
 
