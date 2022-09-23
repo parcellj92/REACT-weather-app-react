@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 export default function SearchEngine() {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
@@ -36,18 +38,61 @@ export default function SearchEngine() {
 
   if (loaded) {
     return (
-      <div>
-        {form}
-        <ul>
-          <li>Temperature: {Math.round(weather.temperature)}˚F</li>
-          <li>Description: {weather.description}</li>
-          <li>Humidity: {weather.humidity}%</li>
-          <li>Wind: {weather.wind}km/h</li>
-          <li>
-            {" "}
-            <img src={weather.icon} alt="Weather Icon" />
-          </li>
-        </ul>
+      <div className="Container">
+        <div className="App">
+          <div className="Weather">
+            <SearchEngine />
+            <div className="row mt-5">
+              <div className="col-6">
+                <h1>
+                  <span>{weather.temperature}</span>
+                  <span className="unit align-text-top">˚F | ˚C</span>
+                </h1>
+                <h2>{weather.city}</h2>
+
+                <div>
+                  <h3 className="date">{weather.date}</h3>
+                </div>
+                <div>
+                  <h3>{weather.description}</h3>
+                </div>
+              </div>
+              <div className="col-6 mb-3">
+                <div>
+                  <img src={weather.icon} alt={weather.description} id="icon" />
+                </div>
+
+                <div>Wind: {weather.wind}mph</div>
+                <div>Humidity: {weather.humidity}%</div>
+              </div>
+            </div>
+            <div className="daily-weather"></div>
+            <div className="weather-forecast" id="forecast">
+              <div className="row">
+                <div className="col-2">
+                  <div className="weather-forecast-date">Thu</div>
+                  ☀️
+                  <div className="weather-forecast-temperatures">
+                    <span className="weather-forecast-temperature-max">
+                      18˚
+                    </span>
+                    <span className="weather-forecast-temperature-min">
+                      12˚
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <footer>
+            <a href="https://github.com/parcellj92/REACT-weather-app-react">
+              Open-source code
+            </a>{" "}
+            by Jessica Parcell
+          </footer>
+        </div>
       </div>
     );
   } else {

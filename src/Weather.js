@@ -1,8 +1,10 @@
 import React from "react";
+import axios from "axios";
 import "./Weather.css";
 import SearchEngine from "./SearchEngine.js";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
 export default function Weather() {
   let weatherData = {
     city: "New York",
@@ -17,7 +19,6 @@ export default function Weather() {
     <div className="Container">
       <div className="App">
         <div className="Weather">
-          <SearchEngine />
           <div className="row mt-5">
             <div className="col-6">
               <h1>
