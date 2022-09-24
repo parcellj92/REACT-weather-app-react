@@ -2,9 +2,6 @@ import React from "react";
 import axios from "axios";
 import "./Weather.css";
 import SearchEngine from "./SearchEngine.js";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-
 export default function Weather() {
   let weatherData = {
     city: "New York",
@@ -16,14 +13,15 @@ export default function Weather() {
     wind: "10",
   };
   return (
-    <div className="Container">
+    <div>
       <div className="App">
         <div className="Weather">
+          <SearchEngine />
           <div className="row mt-5">
             <div className="col-6">
               <h1>
                 <span>{weatherData.temperature}</span>
-                <span className="unit align-text-top">˚F | ˚C</span>
+                <span className="unit align-text-top">˚F</span>
               </h1>
               <h2>{weatherData.city}</h2>
 
@@ -62,14 +60,12 @@ export default function Weather() {
           </div>
         </div>
       </div>
-      <div>
-        <footer>
-          <a href="https://github.com/parcellj92/REACT-weather-app-react">
-            Open-source code
-          </a>{" "}
-          by Jessica Parcell
-        </footer>
-      </div>
+      <footer>
+        <a href="https://github.com/parcellj92/REACT-weather-app-react">
+          Open-source code
+        </a>{" "}
+        by Jessica Parcell
+      </footer>
     </div>
   );
 }
