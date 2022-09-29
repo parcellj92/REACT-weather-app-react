@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate.js";
+import WeatherTemperature from "./WeatherTemperature.js";
 export default function SearchEngine() {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
@@ -43,6 +44,7 @@ export default function SearchEngine() {
         {form}
         <div className="row mt-5">
           <div className="col-6">
+            <WeatherTemperature fahrenheit={weather.temperature} />
             <h1>
               <span>{weather.temperature}</span>
               <span className="unit align-text-top">˚F | ˚C</span>
