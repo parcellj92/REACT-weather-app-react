@@ -2,15 +2,6 @@ import React from "react";
 import "./Weather.css";
 import SearchEngine from "./SearchEngine.js";
 export default function Weather() {
-  let weatherData = {
-    city: "New York",
-    temperature: 76,
-    date: "Tuesday 10:00",
-    description: "Cloudy",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
-    humidity: "80",
-    wind: "10",
-  };
   return (
     <div>
       <div className="App">
