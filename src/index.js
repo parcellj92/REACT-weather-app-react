@@ -5,7 +5,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Weather from "./Weather.js";
 
-import SearchEngine from "./SearchEngine.js";
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 

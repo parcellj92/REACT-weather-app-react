@@ -23,7 +23,6 @@ export default function SearchEngine() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    let apiKey = "80e7e03978eecacba428a41c3f4a5874";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=80e7e03978eecacba428a41c3f4a5874&units=imperial`;
     axios.get(apiUrl).then(displayWeather);
   }
