@@ -44,10 +44,8 @@ export default function SearchEngine() {
         {form}
         <div className="row mt-5">
           <div className="col-6">
-            <WeatherTemperature fahrenheit={weather.temperature} />
             <h1>
-              <span>{weather.temperature}</span>
-              <span className="unit align-text-top">˚F | ˚C</span>
+              <WeatherTemperature temperature={weather.temperature} />
             </h1>
             <h2>{weather.city}</h2>
 
