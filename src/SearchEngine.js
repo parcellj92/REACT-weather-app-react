@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import FormattedDate from "./FormattedDate.js";
 import WeatherTemperature from "./WeatherTemperature.js";
+import WeatherForecast from "./WeatherForecast.js";
 export default function SearchEngine() {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
@@ -64,6 +65,7 @@ export default function SearchEngine() {
             <div>Humidity: {weather.humidity}%</div>
           </div>
         </div>
+        <WeatherForecast />
       </div>
     );
   } else {
