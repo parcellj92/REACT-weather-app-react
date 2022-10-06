@@ -9,6 +9,7 @@ export default function SearchEngine() {
   let [weather, setWeather] = useState(null);
 
   function displayWeather(response) {
+    console.log(response.data);
     setLoaded(true);
     setWeather({
       temperature: Math.round(response.data.main.temp),
