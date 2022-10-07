@@ -66,7 +66,7 @@ export default function SearchEngine() {
             <div>Humidity: {weather.humidity}%</div>
           </div>
         </div>
-        <WeatherForecast name={weather.city} />
+        <WeatherForecast city={weather.city} />
       </div>
     );
   } else {
