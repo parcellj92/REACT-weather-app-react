@@ -6,7 +6,6 @@ export default function WeatherForecast(props) {
   function handleResponse(response) {
     console.log(response.data);
   }
-  console.log(props);
   let city = props.data.name;
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=80e7e03978eecacba428a41c3f4a5874&units=imperial`;
   axios.get(apiUrl).then(handleResponse);
