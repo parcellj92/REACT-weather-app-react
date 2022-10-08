@@ -3,6 +3,7 @@ import axios from "axios";
 import FormattedDate from "./FormattedDate.js";
 import WeatherTemperature from "./WeatherTemperature.js";
 import WeatherForecast from "./WeatherForecast.js";
+import "./App.css";
 export default function SearchEngine() {
   let [city, setCity] = useState("");
   let [loaded, setLoaded] = useState(false);
