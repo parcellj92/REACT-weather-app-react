@@ -20,6 +20,7 @@ export default function SearchEngine() {
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
+      coord: response.data.coord,
     });
     console.log(response.data);
   }
@@ -67,7 +68,7 @@ export default function SearchEngine() {
             <div>Humidity: {weather.humidity}%</div>
           </div>
         </div>
-        <WeatherForecast city={weather.city} />
+        <WeatherForecast coord={weather.coord} />
       </div>
     );
   } else {
