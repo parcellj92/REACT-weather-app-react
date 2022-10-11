@@ -15,7 +15,7 @@ export default function SearchEngine() {
     setWeather({
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
-      wind: response.data.wind.speed,
+      wind: Math.round(response.data.wind.speed),
       humidity: response.data.main.humidity,
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       city: response.data.name,
@@ -64,8 +64,12 @@ export default function SearchEngine() {
               <img src={weather.icon} alt={weather.description} id="icon" />
             </div>
 
-            <div>Wind: {weather.wind}mph</div>
-            <div>Humidity: {weather.humidity}%</div>
+            <div>
+              <strong>Wind:</strong> {weather.wind} mph
+            </div>
+            <div>
+              <strong>Humidity:</strong> {weather.humidity}%
+            </div>
           </div>
         </div>
         <WeatherForecast coord={weather.coord} />
