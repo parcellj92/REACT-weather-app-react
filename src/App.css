@@ -17,9 +17,9 @@ footer {
 }
 button {
   background: rgb(217, 176, 12);
-  border-radius: 5px;
+  border-radius: 25px;
   padding: 1px 12px;
-  margin: 5px;
+  margin: 30px;
   border-width: 2px;
   font-weight: bold;
   font-family: "Times New Roman", Times, serif;
